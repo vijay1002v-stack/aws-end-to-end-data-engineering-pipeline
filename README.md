@@ -9,7 +9,6 @@ An end-to-end AWS Data Engineering project that demonstrates how raw support log
 - AWS Glue (Visual ETL & PySpark)
 - Amazon Athena
 - Amazon Redshift
-- Power BI
 - Python
 - SQL
 
