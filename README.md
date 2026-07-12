@@ -107,7 +107,6 @@ AWS Glue Visual ETL → Converted to PySpark Script for automated execution.
 - Data is converted to Parquet format.
 - Processed files are stored in Amazon S3.
 - Data is loaded into Amazon Redshift.
-- Power BI is used for dashboard creation.
 - The Glue Visual ETL job was later converted into a PySpark script for automation.
 
 ---
