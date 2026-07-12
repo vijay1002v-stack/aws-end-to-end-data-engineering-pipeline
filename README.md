@@ -16,6 +16,10 @@ An end-to-end AWS Data Engineering project that demonstrates how raw support log
 
 ## Project Architecture
                          PIPELINE 1 - SUPPORT LOGS
+## Project Architecture
+
+```text
+                         PIPELINE 1 - SUPPORT LOGS
 
 Log Files (.txt)
       │
@@ -30,13 +34,13 @@ AWS Lambda (Python ETL)
       │
       ▼
 Amazon S3 (Processed - Parquet)
-      ├──────────────────────────►
+      ├──────────────────────────► Amazon Athena (Ad Hoc Analysis)
       │
       ▼
- Amazon Athena (Ad Hoc Analysis)
+Amazon Athena (Ad Hoc Analysis)
       │
       ▼
- Amazon RedShift (Data WArehouse)
+ Amazon Redshift
 
 
 ──────────────────────────────────────────────────────────────────────────────
@@ -59,7 +63,7 @@ AWS Glue Visual ETL
 Amazon S3 (Processed - Parquet)
       │
       ▼
- Amazon Redshift(Data Warehouse)
+ Amazon Redshift
 
 
 ──────────────────────────────────────────────────────────────────────────────
@@ -74,6 +78,14 @@ Amazon Redshift
 
 ──────────────────────────────────────────────────────────────────────────────
 
+
+Automation:
+AWS Glue Visual ETL → Converted to PySpark Script for automated execution.
+```
+──────────────────────────────────────────────────────────────────────────────
+
+
+   
 ---
 
 ## Project Workflow
@@ -97,9 +109,6 @@ Amazon Redshift
 - Data is loaded into Amazon Redshift.
 - Power BI is used for dashboard creation.
 - The Glue Visual ETL job was later converted into a PySpark script for automation.
-
----
-
 
 ---
 
