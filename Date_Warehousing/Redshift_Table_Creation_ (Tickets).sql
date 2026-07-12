@@ -20,7 +20,7 @@ debug         VARCHAR(1000)
 
 COPY public.support_logs
 FROM 's3://careplus-data-st/support-logs/processed/'
-IAM_ROLE 'arn:aws:iam::731962933509:role/service-role/AmazonRedshift-CommandsAccessRole-20260702T013350'
+IAM_ROLE 'arn:aws:iam::731962933509:role/service-role/AmazonRedshift-CommandsAccessRole-***********'
 FORMAT AS PARQUET
 REGION 'us-east-1';
 
@@ -40,6 +40,6 @@ Create table public.support_tickets(
 
 COPY public.support_tickets
 FROM 's3://careplus-data-st/support-tickets/processed/'
-IAM_ROLE 'arn:aws:iam::731962933509:role/service-role/AmazonRedshift-CommandsAccessRole-20260702T013350'
+IAM_ROLE 'arn:aws:iam::731962933509:role/service-role/AmazonRedshift-CommandsAccessRole-***********'
 FORMAT AS PARQUET
 REGION 'us-east-1';
