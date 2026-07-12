@@ -6,7 +6,7 @@ An end-to-end AWS Data Engineering project that demonstrates how raw support log
 
 - Amazon S3
 - AWS Lambda (Python)
-- AWS Glue (Visual ETL & PySpark)
+- AWS Glue 
 - Amazon Athena
 - Amazon Redshift
 - Python
